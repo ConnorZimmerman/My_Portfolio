@@ -6,15 +6,46 @@
   font-family: 'Lato';
 } */
 
-#projectRed{
+#projectRed {
   background-color: #d3d3d3;
   height: 252.775px;
   width: 350px;
 }
 
+.imgClass {
+  height: 196.41;
+  /* height: 140.21; */
+  width: 350px;
+}
+
+/* #wedding{
+  height: 252.775px;
+  width: 350px;
+} */
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.projectDesc {
+  text-align: center;
+  padding-bottom: 80px;
+  color: #2C3E50;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.projectTit {
+  text-align: center;
+  color: #2C3E50;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.gitLink {
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 hr.star-light, hr.star-dark {
@@ -271,7 +302,6 @@ header.masthead h2 {
 .portfolio {
   margin-bottom: 15px;
   background-color: #d3d3d3;
-
 }
 
 .portfolio .portfolio-item {

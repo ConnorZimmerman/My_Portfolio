@@ -70,9 +70,9 @@
       <!-- <h2 class="font-weight-light mb-0  ">Problem Solver - Full Stack Web Developer - Game Designer</h2> -->
       <div id="homeNav">
           <a class="hvr-underline-from-center-top js-scroll-trigger frontNav" href="#portfolio">Portfolio</a>
-          <a class="hvr-underline-from-center-top js-scroll-trigger frontNav" href="#portfolio">15 Days 'Til Moonlight</a>
-          <a class="hvr-underline-from-center-top js-scroll-trigger frontNav" href="#portfolio">About</a>
-          <a class="hvr-underline-from-center-top js-scroll-trigger frontNav" href="#portfolio">Contact</a>
+          <a class="hvr-underline-from-center-top js-scroll-trigger frontNav" href="#game">15 Days 'Til Moonlight</a>
+          <a class="hvr-underline-from-center-top js-scroll-trigger frontNav" href="#about">About</a>
+          <a class="hvr-underline-from-center-top js-scroll-trigger frontNav" href="#contact">Contact</a>
         <!-- <a class="js-scroll-trigger" href="#game"><button class="hvr-glow">15 Days 'Til Moonlight</button></a>
           <a class="js-scroll-trigger" href="#about"><button class="hvr-glow">About</button></a>
           <a class="js-scroll-trigger" href="#contact"><button class="hvr-glow">Contact</button></a> -->
@@ -85,40 +85,43 @@
       <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
       <!-- <hr class="star-dark mb-5"> -->
       <div class="row">
-        <div class="col-md-6 col-lg-4" >
-            <h4>Wedding Planner</h4>
+        <div class="col-md-6 col-lg-4" id="wedding">
+            <h4 class="projectTit">Wedding Planner</h4>
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <!-- <i class="fa fa-search-plus fa-3x"></i> -->
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/wedding-chair.jpg" alt="">
+            <img class="img-fluid imgClass" src="img/portfolio/cs.jpg" alt="">
           </a>
+          <p class="projectDesc">An interactive app for wedding planners to create weddings and RSVP guests. Integrates Google Maps API to show wedding's location as well as C#, ASP .NET Core, Entity, HTML, and CSS.</p>
         </div>
         <div class="col-md-6 col-lg-4">
-            <h4>Question Hub</h4>
+            <h4 class="projectTit">Question Hub</h4>
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <!-- <i class="fa fa-search-plus fa-3x"></i> -->
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+            <img class="img-fluid imgClass" src="img/portfolio/mean.jpg" alt="">
           </a>
+          <p class="projectDesc">Full MEAN application built in 4 hours where users can login, ask questions, answer questions, and like answers. 10/10 grade from Coding Dojo. This project was implemented with JavaScript, TypeScript, Angular, Express, MongoDb, HTML, and CSS.</p>
         </div>
         <div class="col-md-6 col-lg-4">
-            <h4>Book Lovers</h4>
+            <h4 class="projectTit">Book Lovers</h4>
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
               <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                 <!-- <i class="fa fa-search-plus fa-3x"></i> -->
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/book.jpeg" alt="">
+            <img class="img-fluid imgClass" src="img/portfolio/django.png" alt="">
           </a>
+          <p class="projectDesc">An interactive web app with login/reg validation where users can add/review books. This project was implemented with Python, Django, HTML, and CSS</p>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <!-- <div class="col-md-6 col-lg-4">
             <h4>Chip Hunters</h4>
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
             <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -128,7 +131,7 @@
             </div>
             <img class="img-fluid" src="img/portfolio/game.png" alt="">
           </a>
-        </div>
+        </div> -->
         <!-- <div class="col-md-6 col-lg-4">
             <h4>Wedding Planner</h4>
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
@@ -153,12 +156,13 @@
         </div> -->
       </div>
     </div>
+    <a href="https://github.com/ConnorZimmerman" target="_blank"><h2 class="gitLink">Take a look at my other projects.</h2></a>
   </section>
 
   <section class="game" id="game">
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary mb-0">15 Days 'Til Moonlight</h2>
-      <hr class="star-dark mb-5">
+      <!-- <hr class="star-dark mb-5"> -->
       <div class="row">
         <div class="col-md-6 col-lg-4">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">

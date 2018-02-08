@@ -280,11 +280,12 @@ header.masthead h2 {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background-color: #CD2546;
+  /* background-color: #CD2546; */
+  background-color: rgba(0, 0, 0, 0.575);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
-  opacity: 1;
+  opacity: 0.99999;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {

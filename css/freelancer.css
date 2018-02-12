@@ -1,3 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    width: 100%;
+  }
+}
+
+a, a > span {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+a:before, a:after, a > span:before, a > span:after {
+  content: '';
+  position: absolute;
+  transition: transform .5s ease;
+}
+
+#centerText{
+  margin-left: 400px;
+}
+
 #myLogo {
   width: 60%;
 }
@@ -7,7 +32,8 @@
 } */
 
 #projectRed {
-  background-color: #d3d3d3;
+  /* background-color: #d3d3d3; */
+  background-color: #2C3E50;
   height: 252.775px;
   width: 350px;
 }
@@ -17,6 +43,53 @@
   /* height: 140.21; */
   width: 350px;
 }
+
+.effect-5 {
+  display: inline-block;
+  overflow: hidden;
+  color: #2C3E50;
+  font-style: italic;
+}
+.effect-5:before, .effect-5:after {
+  right: 0;
+  bottom: 0;
+  color: #2C3E50;
+  background: #CD2546;
+}
+.effect-5:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(-100%);
+}
+.effect-5:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(100%);
+}
+.effect-5 > span {
+  display: block;
+  padding: 10px;
+}
+.effect-5 > span:before, .effect-5 > span:after {
+  left: 0;
+  top: 0;
+  background: #CD2546
+}
+.effect-5 > span:before {
+  width: 100%;
+  height: 2px;
+  transform: translateX(100%);
+}
+.effect-5 > span:after {
+  width: 2px;
+  height: 100%;
+  transform: translateY(-100%);
+}
+.effect-5:hover:before, .effect-5:hover:after, .effect-5:hover > span:before, .effect-5:hover > span:after {
+  transform: translate(0, 0);
+}
+
+
 
 /* #wedding{
   height: 252.775px;

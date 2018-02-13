@@ -2,25 +2,84 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
 @media screen and (max-width: 768px) {
   h2 {
     width: 100%;
   }
 }
 
-a, a > span {
+::-webkit-scrollbar {
+  display: none;
+}
+
+a, a>span {
   position: relative;
   color: inherit;
   text-decoration: none;
+  width: auto;
 }
-a:before, a:after, a > span:before, a > span:after {
+
+a:before, a:after, a>span:before, a>span:after {
   content: '';
   position: absolute;
   transition: transform .5s ease;
 }
 
-#centerText{
+#centerText {
   margin-left: 400px;
+}
+
+/* #myVideo {
+  position: fixed;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+   min-height: 100%;
+  width: 700px;
+  height: 723px;  
+  z-index: -25px;
+} */
+
+#myVideo {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 56.25% 0 0 0;
+  /* 100%/16*9 = 56.25% = Aspect ratio 16:9 */
+  overflow: hidden;
+  border: 0;
+}
+
+#myVideo video {
+  position: absolute;
+  width: 100vw;
+  object-fit: fill;
+  height: calc(100vh - 80px);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#videoContent {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 172px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.5);
+  font-size: 3em;
+  color: red;
 }
 
 #myLogo {
@@ -50,46 +109,52 @@ a:before, a:after, a > span:before, a > span:after {
   color: #2C3E50;
   font-style: italic;
 }
+
 .effect-5:before, .effect-5:after {
   right: 0;
   bottom: 0;
   color: #2C3E50;
   background: #CD2546;
 }
+
 .effect-5:before {
   width: 100%;
   height: 2px;
   transform: translateX(-100%);
 }
+
 .effect-5:after {
   width: 2px;
   height: 100%;
   transform: translateY(100%);
 }
-.effect-5 > span {
+
+.effect-5>span {
   display: block;
   padding: 10px;
 }
-.effect-5 > span:before, .effect-5 > span:after {
+
+.effect-5>span:before, .effect-5>span:after {
   left: 0;
   top: 0;
   background: #CD2546
 }
-.effect-5 > span:before {
+
+.effect-5>span:before {
   width: 100%;
   height: 2px;
   transform: translateX(100%);
 }
-.effect-5 > span:after {
+
+.effect-5>span:after {
   width: 2px;
   height: 100%;
   transform: translateY(-100%);
 }
-.effect-5:hover:before, .effect-5:hover:after, .effect-5:hover > span:before, .effect-5:hover > span:after {
+
+.effect-5:hover:before, .effect-5:hover:after, .effect-5:hover>span:before, .effect-5:hover>span:after {
   transform: translate(0, 0);
 }
-
-
 
 /* #wedding{
   height: 252.775px;
